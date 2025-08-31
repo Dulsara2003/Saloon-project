@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         /* Home (1st Content) */
+        
 
 
         .hero {
@@ -60,6 +61,9 @@
 
             padding: 20px;
             border-radius: 10px;
+        }
+        .text-balence{
+            text-align: justify;
         }
 
         /* Home (1st Content) */
@@ -178,10 +182,10 @@
         <h2 class="text-center about-title mb-5">About</h2>
         <div class="row align-items-center">
 
-            <div class="col-10 col-md-6 mb-5 container ">
+            <div class="col-10 col-md-6 mb-5 container">
 
 
-                <p class="about-content text-white">
+                <p class="about-content text-white text-balence" style="font-family: 'Franklin Gothic Medium', Arial, sans-serif;font-size: 19px; ">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute.
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
