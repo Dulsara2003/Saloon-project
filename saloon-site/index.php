@@ -38,18 +38,22 @@
 
         .header-mobile {
             font-size: 30px;
+            text-shadow: 4px 6px 8px rgba(0, 0, 0, 0.3);
         }
 
         .header-md {
             font-size: 50px;
+            text-shadow: 4px 6px 8px rgba(0, 0, 0, 0.3);
         }
 
         .header-lg {
             font-size: 60px;
+            text-shadow: 4px 6px 8px rgba(0, 0, 0, 0.3);
         }
 
         .header-xl {
             font-size: 70px;
+            text-shadow: 4px 6px 8px rgba(0, 0, 0, 0.3);
         }
 
         .main-text-balance {
