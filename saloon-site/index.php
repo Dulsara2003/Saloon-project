@@ -36,6 +36,22 @@
             color: white;
         }
 
+        .header-mobile {
+            font-size: 30px;
+        }
+
+        .header-md {
+            font-size: 50px;
+        }
+
+        .header-lg {
+            font-size: 60px;
+        }
+
+        .header-xl {
+            font-size: 70px;
+        }
+
         .main-text-balance {
 
             padding: 20px;
@@ -119,7 +135,7 @@
             <!-- Mobile -->
             <div class="row justify-content-center d-block d-md-none"> <!-- Center the content -->
                 <div class="col-12 main-text-balance text-center"> <!-- 10 columns on mobile, 5 columns on larger screens -->
-                    <h1 class="fw-bold">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</h1>
+                    <h1 class="fw-bold header-mobile">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
             </div>
@@ -127,16 +143,16 @@
 
             <!-- Md -->
             <div class="row d-none d-md-block d-lg-none "> <!-- Center the content -->
-                <div class="col-10 col-md-8 main-text-balance"> <!-- 10 columns on mobile, 5 columns on larger screens -->
-                    <h1 class="fw-bold">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</h1>
+                <div class="col-12 main-text-balance text-center"> <!-- 10 columns on mobile, 5 columns on larger screens -->
+                    <h1 class="fw-bold header-md">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
             </div>
 
             <!-- Lg -->
             <div class="row d-none d-lg-block d-xl-none"> <!-- Center the content -->
-                <div class="col-10 col-md-7 main-text-balance"> <!-- 10 columns on mobile, 5 columns on larger screens -->
-                    <h1 class="fw-bold">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</h1>
+                <div class="col-10 col-md-10 main-text-balance"> <!-- 10 columns on mobile, 5 columns on larger screens -->
+                    <h1 class="fw-bold header-lg">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
             </div>
@@ -144,8 +160,8 @@
 
             <!-- Xl -->
             <div class="row d-none d-xl-block "> <!-- Center the content -->
-                <div class="col-10 col-md-6 main-text-balance"> <!-- 10 columns on mobile, 5 columns on larger screens -->
-                    <h1 class="fw-bold">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</h1>
+                <div class="col-9 main-text-balance"> <!-- 10 columns on mobile, 5 columns on larger screens -->
+                    <h1 class="fw-bold header-xl">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
             </div>
