@@ -1,0 +1,57 @@
+.about-section {
+    padding: 50px 0;
+}
+
+.about-title {
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+.about-content {
+    max-width: 700px;
+}
+
+.about-box {
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.rounded-image {
+    border-radius: 15px;
+}
+
+
+
+@media (max-width: 768px) {
+
+    /* Below LG */
+    .about-box {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+
+
+
+@media (min-width: 991px) {
+
+    /* Below LG */
+    .about-box {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media (min-width: 992px) {
+
+    /* LG and above */
+    .about-box {
+        width: 400px;
+        height: 400px;
+        /* Adjust height as needed */
+    }
+}
