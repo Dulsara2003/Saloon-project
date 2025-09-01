@@ -129,23 +129,21 @@
 
                 <div class="container py-5">
                     <div class="row text-center justify-content-center mb-4">
-                        <div class="col-12 col-md-4 mb-4">
 
-                            <div class="gallery-title fade-up ">Gents</div>
-                            <div class="gallery-card fade-left">
-                               
+                        <div class="col-12 col-md-4 mb-4 fade-left">
+                            <div class="gallery-title ">Gents</div>
+                            <div class="gallery-card ">
                             </div>
-
                         </div>
 
-                        <div class="col-12 col-md-4 mb-4">
-                            <div class="gallery-title fade-up ">Ladies</div>
+                        <div class="col-12 col-md-4 mb-4 fade-up ">
+                            <div class="gallery-title">Ladies</div>
                             <div class="gallery-card zoom-in"></div>
                         </div>
 
-                        <div class="col-12 col-md-4 mb-4">
-                            <div class="gallery-title fade-up ">Kids</div>
-                            <div class="gallery-card fade-right"></div>
+                        <div class="col-12 col-md-4 mb-4 fade-right">
+                            <div class="gallery-title">Kids</div>
+                            <div class="gallery-card"></div>
                         </div>
 
                     </div>
