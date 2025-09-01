@@ -8,9 +8,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         /* Home (1st Content) */
-
-
-
         .hero {
             text-align: left;
             padding: 100px 20px;
@@ -36,6 +33,27 @@
             z-index: 1;
             color: white;
         }
+
+        .services-btn {
+            height: 50px;
+            width: 150px;
+            font-size: 17px;
+            cursor: pointer;
+            font-weight: bold;
+            color: white;
+            border-radius: 4px;
+            border: none;
+            background-color: #db9200ff;
+            transition: background-color 0.3s, color 0.3s, transform 0.2s;
+        }
+
+        .services-btn:hover {
+            background-color: #f7a600;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            border: 1px solid #fcfcfc;
+        }
+
 
         .header-mobile {
             font-size: 30px;
@@ -166,6 +184,7 @@
                         <div class="col-12 main-text-balance text-center"> <!-- 10 columns on mobile, 5 columns on larger screens -->
                             <h1 class="fw-bold header-mobile">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <button class="services-btn">Our Services</button>
                         </div>
                     </div>
 
@@ -175,6 +194,7 @@
                         <div class="col-12 main-text-balance text-center"> <!-- 10 columns on mobile, 5 columns on larger screens -->
                             <h1 class="fw-bold header-md">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <button class="services-btn">Our Services</button>
                         </div>
                     </div>
 
@@ -183,6 +203,7 @@
                         <div class="col-10 col-md-10 main-text-balance"> <!-- 10 columns on mobile, 5 columns on larger screens -->
                             <h1 class="fw-bold header-lg">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <button class="services-btn">Our Services</button>
                         </div>
                     </div>
 
@@ -192,6 +213,7 @@
                         <div class="col-9 main-text-balance"> <!-- 10 columns on mobile, 5 columns on larger screens -->
                             <h1 class="fw-bold header-xl">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <button class="services-btn">Our Services</button>
                         </div>
                     </div>
 
@@ -211,8 +233,9 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute.
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute.
+
                     </p>
+
                 </div>
 
 
@@ -238,7 +261,7 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute.
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute.
+
                     </p>
                 </div>
 
@@ -304,9 +327,9 @@
                         <img src="Resources/about.jpg" class="rounded-image">
                     </div>
                 </div>
-                
 
-                
+
+
                 <div class="col-11 col-lg-6 mb-5 container">
 
 
