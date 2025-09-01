@@ -226,9 +226,112 @@
         </div>
 
 
+        <!-- 3rd Content (Services) -->
+        <div id="scrollspyHeading3" class="container about-section">
+            <h2 class="text-center about-title mb-5">Services</h2>
+            <div class="row align-items-center">
+
+                <div class="col-11 col-lg-6 mb-5 container">
+
+
+                    <p class="about-content text-white text-balence" style="font-family: 'Franklin Gothic Medium', Arial, sans-serif;font-size: 19px; ">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute.
+                    </p>
+                </div>
+
+
+                <div class="col-lg-6 d-flex  justify-content-center justify-content-lg-end">
+                    <div class="about-box">
+                        <img src="Resources/about.jpg" class="rounded-image">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <!-- 4th Content (Products) -->
+        <div id="scrollspyHeading4" class="container about-section">
+            <h2 class="text-center about-title mb-5">Products</h2>
+            <div class="row align-items-center">
+
+                <div class="col-11 col-lg-6 mb-5 container">
+
+
+                    <p class="about-content text-white text-balence" style="font-family: 'Franklin Gothic Medium', Arial, sans-serif;font-size: 19px; ">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute.
+                    </p>
+                </div>
+
+
+                <div class="col-lg-6 d-flex  justify-content-center justify-content-lg-end">
+                    <div class="about-box">
+                        <img src="Resources/about.jpg" class="rounded-image">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <!-- 5th Content (Contact) -->
+        <div id="scrollspyHeading5" class="container about-section">
+            <h2 class="text-center about-title mb-5">Contact</h2>
+            <div class="row align-items-center">
+
+                <div class="col-11 col-lg-6 mb-5 container">
+
+
+                    <p class="about-content text-white text-balence" style="font-family: 'Franklin Gothic Medium', Arial, sans-serif;font-size: 19px; ">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute.
+                    </p>
+                </div>
+
+
+                <div class="col-lg-6 d-flex  justify-content-center justify-content-lg-end">
+                    <div class="about-box">
+                        <img src="Resources/about.jpg" class="rounded-image">
+                    </div>
+                </div>
+                
+
+                
+                <div class="col-11 col-lg-6 mb-5 container">
+
+
+                    <p class="about-content text-white text-balence" style="font-family: 'Franklin Gothic Medium', Arial, sans-serif;font-size: 19px; ">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute.
+                    </p>
+                </div>
+
+
+                <div class="col-lg-6 d-flex  justify-content-center justify-content-lg-end">
+                    <div class="about-box">
+                        <img src="Resources/about.jpg" class="rounded-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
 
     </div>
+
+
 </body>
 
 </html>
