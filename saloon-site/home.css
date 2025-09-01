@@ -38,42 +38,43 @@
 }
 
 .services-btn {
-    height: 50px;
+    height: 45px;
     width: 150px;
     font-size: 17px;
     cursor: pointer;
     font-weight: bold;
-    color: white;
-    border-radius: 4px;
+    color: black;
     border: none;
     background-color: #db9200ff;
     transition: background-color 0.3s, color 0.3s, transform 0.2s;
 }
 
-@media (max-width: 768px) {
-
-.services-btn {
-    height: 40px;
-    width: 120px;
-    font-size: 15px;
-    cursor: pointer;
-    font-weight: bold;
-    color: white;
-    border-radius: 4px;
-    border: none;
-    background-color:#f7a600;
-    transition: background-color 0.3s, color 0.3s, transform 0.2s;
-}
-}
-
-
-
 .services-btn:hover {
+    color: white;
     background-color: #f7a600;
     transform: translateY(-3px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
     border: 1px solid #fcfcfc;
 }
+
+
+@media (max-width: 768px) {
+
+    .services-btn {
+        height: 40px;
+        width: 120px;
+        font-size: 15px;
+        cursor: pointer;
+        font-weight: bold;
+        color: black;
+        border: none;
+        background-color: #f7a600;
+        transition: background-color 0.3s, color 0.3s, transform 0.2s;
+    }
+}
+
+
+
 
 
 .header-mobile {
@@ -100,41 +101,4 @@
 
     padding: 20px;
     border-radius: 10px;
-}
-
-
-
-/* Animation Main-text*/
-@keyframes slideInLeft {
-    0% {
-        transform: translateX(-7%);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-.animate-left {
-    animation: slideInLeft 1s ease-out forwards;
-}
-
-
-/* Keyframes for Bottom-to-Top animation */
-@keyframes bottomToTop {
-    0% {
-        transform: translateY(50px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-/* Apply animation to the div */
-.animate-bottom {
-    animation: bottomToTop 1s ease-out forwards;
 }
