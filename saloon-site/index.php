@@ -6,158 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Web Design</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        /* Home (1st Content) */
-        .hero {
-            text-align: left;
-            padding: 100px 20px;
-            position: relative;
-            overflow: hidden;
-            height: 100vh;
-            display: flex;
-            align-items: end;
-        }
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="about.css">
+     <link rel="stylesheet" href="style.css">
 
-        .hero video {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            z-index: 0;
-        }
-
-        .main-text {
-            position: relative;
-            z-index: 1;
-            color: white;
-        }
-
-        .services-btn {
-            height: 50px;
-            width: 150px;
-            font-size: 17px;
-            cursor: pointer;
-            font-weight: bold;
-            color: white;
-            border-radius: 4px;
-            border: none;
-            background-color: #db9200ff;
-            transition: background-color 0.3s, color 0.3s, transform 0.2s;
-        }
-
-        .services-btn:hover {
-            background-color: #f7a600;
-            transform: translateY(-3px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-            border: 1px solid #fcfcfc;
-        }
-
-
-        .header-mobile {
-            font-size: 30px;
-            text-shadow: 4px 6px 8px rgba(0, 0, 0, 0.3);
-        }
-
-        .header-md {
-            font-size: 50px;
-            text-shadow: 4px 6px 8px rgba(0, 0, 0, 0.3);
-        }
-
-        .header-lg {
-            font-size: 60px;
-            text-shadow: 4px 6px 8px rgba(0, 0, 0, 0.3);
-        }
-
-        .header-xl {
-            font-size: 70px;
-            text-shadow: 4px 6px 8px rgba(0, 0, 0, 0.3);
-        }
-
-        .main-text-balance {
-
-            padding: 20px;
-            border-radius: 10px;
-        }
-
-        .text-balence {
-            text-align: justify;
-        }
-
-        /* Home (1st Content) */
-
-
-
-        /* About (2nd Content) */
-        .about-section {
-            padding: 50px 0;
-        }
-
-        .about-title {
-            color: #ffcc00;
-            font-weight: bold;
-        }
-
-        .about-content {
-            max-width: 700px;
-        }
-
-        .about-box {
-            background-color: #d3d3d3;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-        }
-
-        .rounded-image {
-            border-radius: 15px;
-        }
-
-        .btn-custom {
-            border: 2px solid #ffcc00;
-            color: #ffffff;
-            padding: 8px 20px;
-            font-weight: bold;
-        }
-
-        .btn-custom:hover {
-            background-color: #ffcc00;
-            color: #000;
-        }
-
-        @media (max-width: 768px) {
-
-            /* Below LG */
-            .about-box {
-                width: 400px;
-                height: 400px;
-            }
-        }
-
-
-
-
-        @media (min-width: 991px) {
-
-            /* Below LG */
-            .about-box {
-                width: 300px;
-                height: 300px;
-            }
-        }
-
-        @media (min-width: 992px) {
-
-            /* LG and above */
-            .about-box {
-                width: 400px;
-                height: 400px;
-                /* Adjust height as needed */
-            }
-        }
-    </style>
 </head>
 
 <body style="background-color: #0C0C0C;">
@@ -177,42 +29,70 @@
                     <source src="Resources/Video/video.mp4" type="video/mp4">
                 </video>
 
+                <div class="video-overlay"></div>
+
+
                 <div class="container main-text">
 
                     <!-- Mobile -->
                     <div class="row justify-content-center d-block d-md-none"> <!-- Center the content -->
-                        <div class="col-12 main-text-balance text-center"> <!-- 10 columns on mobile, 5 columns on larger screens -->
+                        <div class="col-12 main-text-balance text-center animate-left"> <!-- 10 columns on mobile, 5 columns on larger screens -->
                             <h1 class="fw-bold header-mobile">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            <button class="services-btn">Our Services</button>
+                        </div>
+
+                        <div class="animate-bottom text-center">
+                            <p class="mx-auto text-balance ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
+                            <button class="services-btn ">Our Services</button>
                         </div>
                     </div>
 
 
                     <!-- Md -->
                     <div class="row d-none d-md-block d-lg-none "> <!-- Center the content -->
-                        <div class="col-12 main-text-balance text-center"> <!-- 10 columns on mobile, 5 columns on larger screens -->
+                        <div class="col-12 main-text-balance text-center animate-left"> <!-- 10 columns on mobile, 5 columns on larger screens -->
                             <h1 class="fw-bold header-md">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+                        </div>
+
+                        <div class="animate-bottom">
+                            <p class="mx-auto text-balance ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
                             <button class="services-btn">Our Services</button>
                         </div>
                     </div>
 
                     <!-- Lg -->
                     <div class="row d-none d-lg-block d-xl-none"> <!-- Center the content -->
-                        <div class="col-10 col-md-10 main-text-balance"> <!-- 10 columns on mobile, 5 columns on larger screens -->
+                        <div class="col-10 col-md-10 main-text-balance animate-left"> <!-- 10 columns on mobile, 5 columns on larger screens -->
+
                             <h1 class="fw-bold header-lg">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+
+                        <div class="animate-bottom">
+                            <p class="col-9 text-balance ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
                             <button class="services-btn">Our Services</button>
                         </div>
+
                     </div>
 
 
                     <!-- Xl -->
                     <div class="row d-none d-xl-block "> <!-- Center the content -->
-                        <div class="col-9 main-text-balance"> <!-- 10 columns on mobile, 5 columns on larger screens -->
+                        <div class="col-9 main-text-balance animate-left"> <!-- 10 columns on mobile, 5 columns on larger screens -->
                             <h1 class="fw-bold header-xl">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+                        </div>
+
+                        <div class="animate-bottom">
+                            <p class="col-9 text-balance ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
+
                             <button class="services-btn">Our Services</button>
                         </div>
                     </div>
@@ -229,7 +109,7 @@
                 <div class="col-11 col-lg-6 mb-5 container">
 
 
-                    <p class="about-content text-white text-balence" style="font-family: 'Franklin Gothic Medium', Arial, sans-serif;font-size: 19px; ">
+                    <p class="about-content text-white text-balance" style="font-family: 'Franklin Gothic Medium', Arial, sans-serif;font-size: 19px; ">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute.
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -257,7 +137,7 @@
                 <div class="col-11 col-lg-6 mb-5 container">
 
 
-                    <p class="about-content text-white text-balence" style="font-family: 'Franklin Gothic Medium', Arial, sans-serif;font-size: 19px; ">
+                    <p class="about-content text-white text-balance " style="font-family: 'Franklin Gothic Medium', Arial, sans-serif;font-size: 19px; ">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute.
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
