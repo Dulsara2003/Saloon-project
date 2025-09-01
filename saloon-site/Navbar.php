@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navbar Design</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
     <style>
         .navbar {
             background-color: #0C0C0C;
@@ -25,7 +27,8 @@
             color: white;
             padding: 8px 15px;
             font-weight: 500;
-            transition: all 0.4s ease-in-out; /* Smooth transition for all properties */
+            transition: all 0.4s ease-in-out;
+            /* Smooth transition for all properties */
             position: relative;
             overflow: hidden;
             z-index: 1;
@@ -46,7 +49,8 @@
         .btn-book:hover {
             color: white;
             border-color: #f7a600;
-            box-shadow: 0 0 10px rgba(247, 166, 0, 0.6), 0 0 20px rgba(247, 166, 0, 0.4); /* Glow effect */
+            box-shadow: 0 0 10px rgba(247, 166, 0, 0.6), 0 0 20px rgba(247, 166, 0, 0.4);
+            /* Glow effect */
         }
 
         .btn-book:hover::before {
@@ -158,7 +162,8 @@
             }
 
             .close-btn {
-                display: none; /* Hide close button on large screens */
+                display: none;
+                /* Hide close button on large screens */
             }
         }
     </style>
@@ -176,11 +181,13 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <button class="close-btn" id="closeMenu">&times;</button>
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#scrollspyHeading1">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#scrollspyHeading2">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#scrollspyHeading3">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#scrollspyHeading4">Products</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#scrollspyHeading5">Contact</a></li>
+                    </ul>
                 </ul>
                 <button class="btn-book">Book Now</button>
             </div>
@@ -188,12 +195,31 @@
     </nav>
 
     <script>
-        document.getElementById("toggleMenu").addEventListener("click", function () {
+        document.getElementById("toggleMenu").addEventListener("click", function() {
             document.getElementById("navbarNav").classList.add("show");
         });
 
-        document.getElementById("closeMenu").addEventListener("click", function () {
+        document.getElementById("closeMenu").addEventListener("click", function() {
             document.getElementById("navbarNav").classList.remove("show");
+        });
+
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 70, // Adjusts for fixed navbar height
+                        behavior: 'smooth'
+                    });
+                }
+
+                // Close the sidebar if open (mobile)
+                document.getElementById("navbarNav").classList.remove("show");
+            });
         });
     </script>
 
