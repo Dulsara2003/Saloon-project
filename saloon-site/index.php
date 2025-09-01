@@ -89,7 +89,11 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            border-radius: 10px;
+           
+        }
+
+        .rounded-image{
+            border-radius: 15px;
         }
 
         .btn-custom {
@@ -104,9 +108,19 @@
             color: #000;
         }
 
+         @media (max-width: 768px) {
+
+            /* Below LG */
+            .about-box {
+                width: 400px;
+                height: 400px;
+            }
+        }
 
 
-        @media (max-width: 991px) {
+
+
+        @media (min-width: 991px) {
 
             /* Below LG */
             .about-box {
@@ -136,7 +150,7 @@
     <!-- Hero Section with Video -->
     <section class="hero">
         <video autoplay muted loop>
-            <source src="Video/video.mp4" type="video/mp4">
+            <source src="Resources/Video/video.mp4" type="video/mp4">
         </video>
         <div class="container main-text">
 
@@ -182,7 +196,7 @@
         <h2 class="text-center about-title mb-5">About</h2>
         <div class="row align-items-center">
 
-            <div class="col-10 col-md-6 mb-5 container">
+            <div class="col-11 col-lg-6 mb-5 container">
 
 
                 <p class="about-content text-white text-balence" style="font-family: 'Franklin Gothic Medium', Arial, sans-serif;font-size: 19px; ">
@@ -194,12 +208,9 @@
             </div>
 
 
-            <div class="col-md-6 d-flex justify-content-md-end justify-content-center">
+            <div class="col-lg-6 d-flex  justify-content-center justify-content-lg-end">
                 <div class="about-box">
-                    <svg width="100%" height="100%" viewBox="0 0 100 100">
-                        <line x1="0" y1="0" x2="100" y2="100" stroke="black" />
-                        <line x1="100" y1="0" x2="0" y2="100" stroke="black" />
-                    </svg>
+                  <img src="Resources/about.jpg" class="rounded-image">
                 </div>
             </div>
 
