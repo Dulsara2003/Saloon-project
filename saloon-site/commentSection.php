@@ -7,6 +7,7 @@
     <title>Testimonial Slider</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="all.css">
     <style>
         .comment-section {
             padding: 80px 0;
@@ -98,7 +99,7 @@
 
 <body>
 
-    <section class="comment-section">
+    <section class="comment-section zoom-in">
       
             <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
 
@@ -110,8 +111,8 @@
 
                 <div class="carousel-inner">
                     <!-- Slide 1 -->
-                    <div class="carousel-item active">
-                        <div class="testimonial-slider">
+                    <div class="carousel-item active ">
+                        <div class="testimonial-slider ">
                             <div class="quote-icon">”</div>
                             <p class="col-10 mx-auto">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -146,6 +147,7 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+     <script src="all.js"></script>
 </body>
 
 </html>
