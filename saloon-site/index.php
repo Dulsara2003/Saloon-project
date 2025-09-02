@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="about.css">
     <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="comment.css">
+
 </head>
 
 <body style="background-color: #0C0C0C;">
@@ -123,69 +125,60 @@
 
 
         <!-- 3rd Content (Services) -->
-        <div id="scrollspyHeading3" class="container about-section">
-            <h2 class="text-center about-title mb-5 fade-up ">Services</h2>
-            <div class="row align-items-center">
+        <div id="scrollspyHeading3" class=" services-section">
 
-                <div class="container py-5">
-                    <div class="row text-center justify-content-center mb-4">
+            <div class="container">
+                <h2 class="text-center about-title mb-5 fade-up ">Services</h2>
+                <div class="row align-items-center">
 
-                        <div class="col-12 col-md-4 mb-4 fade-left">
-                            <div class="gallery-title ">Gents</div>
-                            <div class="gallery-card ">
+                    <div class="container py-5">
+                        <div class="row text-center justify-content-center mb-4">
+
+                            <div class="col-12 col-md-4 mb-4 fade-left">
+                                <div class="gallery-title ">Gents</div>
+                                <div class="gallery-card ">
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-4 mb-4 fade-up ">
+                                <div class="gallery-title">Ladies</div>
+                                <div class="gallery-card zoom-in"></div>
+                            </div>
+
+                            <div class="col-12 col-md-4 mb-4 fade-right">
+                                <div class="gallery-title">Kids</div>
+                                <div class="gallery-card"></div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="row text-center">
+                            <div class="col-12 fade-up ">
+                                <p class="px-3 text-white  ">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                </p>
+                                <button class="our-gallery-btn">Our Gallery</button>
                             </div>
                         </div>
-
-                        <div class="col-12 col-md-4 mb-4 fade-up ">
-                            <div class="gallery-title">Ladies</div>
-                            <div class="gallery-card zoom-in"></div>
-                        </div>
-
-                        <div class="col-12 col-md-4 mb-4 fade-right">
-                            <div class="gallery-title">Kids</div>
-                            <div class="gallery-card"></div>
-                        </div>
-
                     </div>
 
-
-                    <div class="row text-center">
-                        <div class="col-12 fade-up ">
-                            <p class="px-3 text-white  ">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            </p>
-                            <button class="our-gallery-btn">Our Gallery</button>
-                        </div>
-                    </div>
                 </div>
 
             </div>
+
+          <?php include"test.php"; ?>
+
         </div>
 
 
 
         <!-- 4th Content (Products) -->
-        <div id="scrollspyHeading4" class="container about-section">
-            <h2 class="text-center about-title mb-5">Products</h2>
-            <div class="row align-items-center">
+        <div id="scrollspyHeading4" class=" about-section">
 
-                <div class="col-11 col-lg-6 mb-5 container">
-                    <p class="about-content text-white text-balence" style="font-family: 'Franklin Gothic Medium', Arial, sans-serif;font-size: 19px; ">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute.
-                    </p>
-                </div>
 
-                <div class="col-lg-6 d-flex  justify-content-center justify-content-lg-end">
-                    <div class="about-box">
-                        <img src="Resources/about.jpg" class="rounded-image">
-                    </div>
-                </div>
 
-            </div>
         </div>
 
 
