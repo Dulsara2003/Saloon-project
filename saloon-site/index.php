@@ -168,7 +168,10 @@
 
             </div>
 
-          <?php include"test.php"; ?>
+
+            
+                <?php include "commentSection.php"; ?>
+            
 
         </div>
 
