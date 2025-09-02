@@ -1,0 +1,52 @@
+.product-section {
+    padding: 40px 0;
+}
+
+.product-title {
+    color: #f7a600;
+    font-weight: bold;
+
+}
+
+.rounded-image {
+  border-radius: 15px;
+  object-fit: cover;
+  height: 100%;
+}
+
+
+.product-content {
+    max-width: 700px;
+    line-height: 1.5;
+}
+
+.about-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.rounded-image {
+    border-radius: 15px;
+}
+
+
+@media (max-width: 768px) {
+
+    /* Below LG */
+    .about-box {
+        width: 450px;
+        height: 450px;
+    }
+}
+
+
+@media (max-width: 992px) {
+
+    /* Below LG */
+    .about-box {
+        width: 480px;
+        height: 400px;
+    }
+}

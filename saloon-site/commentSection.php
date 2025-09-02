@@ -7,10 +7,10 @@
     <title>Testimonial Slider</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-      <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="all.css">
     <style>
         .comment-section {
-            padding: 80px 0;
+            padding: 30px 0;
         }
 
         .testimonial-slider {
@@ -65,10 +65,9 @@
 
         .carousel-control-prev-icon,
         .carousel-control-next-icon {
-            filter: invert(0%);
+            filter: invert(100%);
             width: 30px;
             height: 30px;
-            background-color: black;
             transition: transform 0.2s ease;
         }
 
@@ -85,9 +84,8 @@
         }
 
         .carousel-indicators [data-bs-target] {
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
+            width: 12px;
+            height: 12px;
             background-color: #6c757d;
         }
 
@@ -100,54 +98,67 @@
 <body>
 
     <section class="comment-section zoom-in">
-      
-            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
 
-                <!-- Indicators (must be here, before carousel-inner) -->
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"></button>
-                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"></button>
-                </div>
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
 
-                <div class="carousel-inner">
-                    <!-- Slide 1 -->
-                    <div class="carousel-item active ">
-                        <div class="testimonial-slider ">
-                            <div class="quote-icon">”</div>
-                            <p class="col-10 mx-auto">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua.
-                            </p>
-                            <div class="author">Dulsara Dissanayaka</div>
-                        </div>
-                    </div>
-
-                    <!-- Slide 2 -->
-                    <div class="carousel-item">
-                        <div class="testimonial-slider">
-                            <div class="quote-icon">”</div>
-                            <p class="col-10 mx-auto">
-                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                            </p>
-                            <div class="author">John Doe</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Arrows -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </button>
+            <!-- Indicators (must be here, before carousel-inner) -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2"></button>
             </div>
-       
+
+            <div class="carousel-inner">
+
+                <!-- Comment 1 -->
+                <div class="carousel-item active ">
+                    <div class="testimonial-slider ">
+                        <div class="quote-icon">”</div>
+                        <p class="col-10 mx-auto">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua.
+                        </p>
+                        <div class="author">Dulsara Dissanayaka</div>
+                    </div>
+                </div>
+
+                <!-- Comment 2 -->
+                <div class="carousel-item">
+                    <div class="testimonial-slider">
+                        <div class="quote-icon">”</div>
+                        <p class="col-10 mx-auto">
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        </p>
+                        <div class="author">John Doe</div>
+                    </div>
+                </div>
+
+                <!-- Comment 3 -->
+                <div class="carousel-item">
+                    <div class="testimonial-slider">
+                        <div class="quote-icon">”</div>
+                        <p class="col-10 mx-auto">
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        </p>
+                        <div class="author">John Doe</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Arrows -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
     </section>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-     <script src="all.js"></script>
+    <script src="all.js"></script>
 </body>
 
 </html>

@@ -10,11 +10,11 @@
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="about.css">
     <link rel="stylesheet" href="services.css">
-    <link rel="stylesheet" href="comment.css">
+    <link rel="stylesheet" href="product.css">
 
 </head>
 
-<body style="background-color: #0C0C0C;">
+<body style="background-color: #0C0C0C; overflow-x:hidden; ">
 
     <?php
     include "Navbar.php";
@@ -169,17 +169,34 @@
             </div>
 
 
-            
-                <?php include "commentSection.php"; ?>
-            
+
+            <?php include "commentSection.php"; ?>
+
 
         </div>
 
-
-
         <!-- 4th Content (Products) -->
         <div id="scrollspyHeading4" class=" about-section">
+            <div id="scrollspyHeading2" class="container product-section ">
+                <h2 class="text-center product-title mb-5 fade-up">Products</h2>
+                <div class="row align-items-center">
 
+                    <div class="col-lg-6 d-flex justify-content-lg-start mb-5  justify-content-center ">
+                        <div class="about-box fade-left">
+                            <img src="Resources/product.jpg" class="rounded-image">
+                        </div>
+                    </div>
+
+                    <div class="col-11 col-lg-6 mb-5 container">
+                        <p class="product-content text-white text-balance fade-right" style="font-family: 'Franklin Gothic Medium', Arial, sans-serif;font-size: 19px; ">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
 
 
         </div>
