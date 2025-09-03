@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     }, {
-        threshold: 0.5 // 50% visible
+        threshold: 0.1 // 50% visible
     });
 
     targets.forEach(target => observer.observe(target));

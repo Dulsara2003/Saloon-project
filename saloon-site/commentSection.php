@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="all.css">
     <style>
         .comment-section {
-            padding: 30px 0;
+            padding: 40px 0;
+            margin-top: 100px;
+          
         }
 
         .testimonial-slider {
