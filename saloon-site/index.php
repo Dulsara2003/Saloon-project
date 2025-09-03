@@ -411,7 +411,7 @@
                                         <input type="text" class="form-control" placeholder="Your Contact Number">
                                     </div>
                                     <div class="col-md-6">
-                                        <select class="form-select">
+                                        <select class="form-select text-white">
                                             <option selected disabled>Subject</option>
                                             <option value="1">General Inquiry</option>
                                             <option value="2">Support</option>
@@ -452,6 +452,8 @@
 
 
 <?php include"footer.php"; ?>
+
+
     <script src="all.js"></script>
     <script src="services.js"></script>
 </body>
