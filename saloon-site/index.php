@@ -51,41 +51,6 @@
             color: white;
         }
 
-        .services-btn {
-            height: 45px;
-            width: 150px;
-            font-size: 17px;
-            cursor: pointer;
-            font-weight: bold;
-            color: black;
-            border: none;
-            background-color: #db9200ff;
-            transition: background-color 0.3s, color 0.3s, transform 0.2s;
-        }
-
-        .services-btn:hover {
-            color: white;
-            background-color: #f7a600;
-            transform: translateY(-3px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-
-        }
-
-
-        @media (max-width: 768px) {
-
-            .services-btn {
-                height: 40px;
-                width: 120px;
-                font-size: 15px;
-                cursor: pointer;
-                font-weight: bold;
-                color: black;
-                border: none;
-                background-color: #f7a600;
-                transition: background-color 0.3s, color 0.3s, transform 0.2s;
-            }
-        }
 
         .header-mobile {
             font-size: 30px;
@@ -108,7 +73,6 @@
         }
 
         .main-text-balance {
-
             padding: 20px;
             border-radius: 10px;
         }
@@ -119,7 +83,9 @@
 
         /* About css */
         .about-section {
-            padding: 80px 0;
+            padding: 50px 0;
+            margin-top: 100px;
+
         }
 
         .about-title {
@@ -140,10 +106,7 @@
 
         }
 
-        .rounded-image {
-            border-radius: 15px;
-        }
-
+        
 
         @media (max-width: 768px) {
 
@@ -165,7 +128,8 @@
 
         /* Services css */
         .services-section {
-            padding: 80px 0;
+            padding: 50px 0;
+            margin-top: 100px;
         }
 
         .gallery-card {
@@ -180,50 +144,18 @@
             margin: 0 auto;
         }
 
-        .our-gallery-btn {
-            height: 45px;
-            width: 150px;
-            font-size: 17px;
-            cursor: pointer;
-            font-weight: bold;
-            color: black;
-            border: none;
-            background-color: #db9200ff;
-            transition: background-color 0.3s, color 0.3s, transform 0.2s;
-        }
-
-        .our-gallery-btn:hover {
-            color: white;
-            background-color: #f7a600;
-            transform: translateY(-3px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-            border: 1px solid #fcfcfc;
-        }
-
         .gallery-title {
             font-weight: bold;
             margin-bottom: 10px;
             color: white;
         }
 
-        @media (max-width: 768px) {
-
-            .our-gallery-btn {
-                height: 40px;
-                width: 120px;
-                font-size: 15px;
-                cursor: pointer;
-                font-weight: bold;
-                color: black;
-                border: none;
-                background-color: #f7a600;
-                transition: background-color 0.3s, color 0.3s, transform 0.2s;
-            }
-        }
+   
 
         /* Contact css */
         .contact-section {
-            padding: 80px 0;
+            padding: 50px 0;
+            margin-top: 100px;
         }
 
         .contact-title {
@@ -252,24 +184,11 @@
             height: 120px;
         }
 
-        .send-btn {
-            background-color: #f7a600;
-            color: #000;
-            border: none;
-            border-radius: 0;
-            padding: 10px 30px;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-
-        .send-btn:hover {
-            background-color: #d18e00;
-        }
-
+    
         /* Map Container Styling */
         .map-container iframe {
             width: 100%;
-            height: 400px;
+            height: 350px;
             border: 0;
             border-radius: 10px;
             filter: hue-rotate(40deg) saturate(1.4) brightness(1.1);
@@ -309,7 +228,7 @@
                             <p class="mx-auto text-balance ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             </p>
-                            <button class="services-btn ">Our Services</button>
+                            <button class="button">Our Services</button>
                         </div>
                     </div>
 
@@ -325,7 +244,7 @@
                             <p class="mx-auto text-balance ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             </p>
-                            <button class="services-btn">Our Services</button>
+                            <button class="button">Our Services</button>
                         </div>
                     </div>
 
@@ -340,7 +259,7 @@
                             <p class="col-9 text-balance ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             </p>
-                            <button class="services-btn">Our Services</button>
+                            <button class="button">Our Services</button>
                         </div>
 
                     </div>
@@ -356,7 +275,7 @@
                             <p class="col-9 text-balance ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             </p>
-                            <button class="services-btn">Our Services</button>
+                            <button class="button">Our Services</button>
                         </div>
                     </div>
 
@@ -366,7 +285,7 @@
 
         <!-- 2nd Content (About) -->
         <div id="scrollspyHeading2" class="container about-section ">
-            <h2 class="text-center about-title mb-5 fade-up">About</h2>
+            <h3 class="text-center about-title mb-3 fade-up">About</h3>
             <div class="row align-items-center">
 
                 <div class="col-11 col-lg-6 mb-5 container">
@@ -391,7 +310,7 @@
         <div id="scrollspyHeading3" class=" services-section">
 
             <div class="container">
-                <h2 class="text-center about-title mb-5 fade-up ">Services</h2>
+                <h3 class="text-center about-title mb-3 fade-up ">Services</h3>
                 <div class="row align-items-center">
 
                     <div class="container py-5">
@@ -403,9 +322,9 @@
                                 </div>
                             </div>
 
-                            <div class="col-12 col-md-4 mb-4 fade-up ">
+                            <div class="col-12 col-md-4 mb-4  zoom-in ">
                                 <div class="gallery-title">Ladies</div>
-                                <div class="gallery-card zoom-in"></div>
+                                <div class="gallery-card"></div>
                             </div>
 
                             <div class="col-12 col-md-4 mb-4 fade-right">
@@ -422,7 +341,7 @@
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                                 </p>
-                                <button class="our-gallery-btn">Our Gallery</button>
+                                <button class="button">Our Gallery</button>
                             </div>
                         </div>
                     </div>
@@ -503,7 +422,7 @@
                                         <textarea class="form-control" placeholder="Your Message"></textarea>
                                     </div>
                                     <div class="col-12">
-                                        <button type="submit" class="btn send-btn">Send</button>
+                                        <button type="submit" class="button">Send</button>
                                     </div>
                                 </div>
                             </form>
