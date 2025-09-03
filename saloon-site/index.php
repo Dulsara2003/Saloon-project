@@ -451,7 +451,7 @@
 
 
 
-
+<?php include"footer.php"; ?>
     <script src="all.js"></script>
     <script src="services.js"></script>
 </body>

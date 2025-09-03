@@ -78,10 +78,15 @@
     <footer class="footer">
         <div class="container">
             <div class="row">
+                 <!-- Logo & Quick Links -->
+                <div class="col-md-3 mb-4">
+                    <div class="logo-box">Logo</div>
+                  
+                </div>
 
                 <!-- Logo & Quick Links -->
-                <div class="col-md-4 mb-4">
-                    <div class="logo-box">Logo</div>
+                <div class="col-md-3 mb-4">
+                
                     <h5>Quick Links</h5>
                     <a href="#">Home</a>
                     <a href="#">About</a>
@@ -90,7 +95,7 @@
                 </div>
 
                 <!-- Location & Opening Times -->
-                <div class="col-md-4 mb-4">
+                <div class="col-md-3 mb-4">
                     <h5>Location & Opening Times</h5>
                     <p><strong>Opening Times</strong><br>
                         Tuesday - Sunday: 9:00am – 7:00pm</p>
@@ -99,7 +104,7 @@
                 </div>
 
                 <!-- Contact Us -->
-                <div class="col-md-4 mb-4">
+                <div class="col-md-3 mb-4">
                     <h5>Contact Us</h5>
                     <p><strong>Mobile</strong><br>011-1212145<br>011-1212145</p>
                     <p><strong>Email</strong><br>yoursalonemail@gmail.com</p>
