@@ -58,3 +58,46 @@ document.addEventListener("DOMContentLoaded", () => {
 
     targets.forEach(target => observer.observe(target));
 });
+
+
+
+         // Typing Text Animation
+         const words = [
+             "STYLISH CUTS",
+             "GLAM LOOKS",
+             "HAIR TRENDS",
+             "BEAUTY CARE",
+             "LUXURY TOUCH",
+             "MODERN STYLES",
+             "ELEGANT FINISH",
+             "SHINE & CONFIDENCE"
+         ];
+
+         const spans = document.querySelectorAll(".typing-text");
+
+         spans.forEach((span, index) => {
+             let wordIndex = index % words.length; // each span starts from different word
+             let charIndex = 0;
+             let deleting = false;
+
+             function typeEffect() {
+                 let currentWord = words[wordIndex];
+                 if (!deleting) {
+                     span.textContent = currentWord.substring(0, charIndex++);
+                     if (charIndex > currentWord.length) {
+                         deleting = true;
+                         setTimeout(typeEffect, 1000);
+                         return;
+                     }
+                 } else {
+                     span.textContent = currentWord.substring(0, charIndex--);
+                     if (charIndex < 0) {
+                         deleting = false;
+                         wordIndex = (wordIndex + spans.length) % words.length; // move ahead by number of spans
+                     }
+                 }
+                 setTimeout(typeEffect, deleting ? 80 : 120);
+             }
+
+             typeEffect();
+         });

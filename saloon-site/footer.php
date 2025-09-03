@@ -89,10 +89,13 @@
                 <!-- Logo & Quick Links -->
                 <div class="col-md-2 mb-4 ">
                     <h5>Quick Links</h5>
-                    <a href="#">Home</a>
-                    <a href="#">About</a>
+                    <a href="#scrollspyHeading1">Home</a>
+                    <a href="#scrollspyHeading2">About</a>
+                    <a href="#scrollspyHeading3">Services</a>
+                     <a href="#scrollspyHeading4">Products</a>
+                    <a href="#scrollspyHeading5">Contact</a>
                     <a href="#">Terms & Conditions</a>
-                    <a href="#">Contact</a>
+                    
                 </div>
 
                 <!-- Location & Opening Times -->

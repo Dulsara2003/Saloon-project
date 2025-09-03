@@ -77,6 +77,26 @@
             border-radius: 10px;
         }
 
+        /* Typing Animation */
+        .typing::after {
+            content: '|';
+            margin-left: 5px;
+            animation: blink 0.7s infinite;
+        }
+
+        @keyframes blink {
+
+            0%,
+            50% {
+                opacity: 1;
+            }
+
+            51%,
+            100% {
+                opacity: 0;
+            }
+        }
+
         /* Home css End */
 
 
@@ -106,7 +126,7 @@
 
         }
 
-        
+
 
         @media (max-width: 768px) {
 
@@ -150,7 +170,23 @@
             color: white;
         }
 
-   
+        /* Input & Textarea placeholder white */
+        .form-control::placeholder,
+        textarea::placeholder {
+            color: #c2c2c2ff !important;
+            opacity: 1;
+            /* Ensure full white */
+        }
+
+        /* Select dropdown default option white */
+        .form-select option[disabled] {
+            color: #c2c2c2ff !important;
+        }
+
+        .form-select {
+            color: #c2c2c2ff !important;
+        }
+
 
         /* Contact css */
         .contact-section {
@@ -166,25 +202,28 @@
             font-size: 28px;
         }
 
+
         .contact-form .form-control,
         .contact-form .form-select {
             background-color: transparent;
             border: 1px solid #f7a600;
-            color: #fff;
             border-radius: 0;
+
         }
 
         .contact-form .form-control:focus,
         .contact-form .form-select:focus {
             box-shadow: none;
             border-color: #ffcc33;
+
         }
+
 
         .contact-form textarea {
             height: 120px;
         }
 
-    
+
         /* Map Container Styling */
         .map-container iframe {
             width: 100%;
@@ -204,7 +243,7 @@
 
     <!-- Hero Section with Video -->
     <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
-        data-bs-smooth-scroll="true" class="scrollspy-example ">
+        data-bs-smooth-scroll="true" class="scrollspy-example mb-5">
 
 
         <div id="scrollspyHeading1">
@@ -268,7 +307,7 @@
                     <!-- Xl -->
                     <div class="row d-none d-xl-block"> <!-- Center the content -->
                         <div class="col-9 main-text-balance animate-left"> <!-- 10 columns on mobile, 5 columns on larger screens -->
-                            <h1 class="fw-bold header-xl fade-right">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</h1>
+                            <h1 class="fw-bold header-xl fade-right typing-text"></h1>
                         </div>
 
                         <div class="fade-up">
@@ -402,16 +441,17 @@
                             <form class="contact-form">
                                 <div class="row g-3">
                                     <div class="col-md-6">
-                                        <input type="text" class="form-control" placeholder="Your Name">
+                                        <input type="text" class="form-control text-white" placeholder="Your Name" style="background-color: #1c1c1c;">
+
                                     </div>
                                     <div class="col-md-6">
-                                        <input type="email" class="form-control" placeholder="Your Email">
+                                        <input type="email" class="form-control text-white" placeholder="Your Email" style="background-color: #1c1c1c;">
                                     </div>
                                     <div class="col-md-6">
-                                        <input type="text" class="form-control" placeholder="Your Contact Number">
+                                        <input type="text" class="form-control  text-white " placeholder="Your Contact Number" style="background-color: #1c1c1c;">
                                     </div>
                                     <div class="col-md-6">
-                                        <select class="form-select text-white">
+                                        <select class="form-select ">
                                             <option selected disabled>Subject</option>
                                             <option value="1">General Inquiry</option>
                                             <option value="2">Support</option>
@@ -419,7 +459,7 @@
                                         </select>
                                     </div>
                                     <div class="col-12">
-                                        <textarea class="form-control" placeholder="Your Message"></textarea>
+                                        <textarea class="form-control text-white " style="background-color: #1c1c1c;" placeholder="Your Message"></textarea>
                                     </div>
                                     <div class="col-12">
                                         <button type="submit" class="button">Send</button>
@@ -451,7 +491,7 @@
 
 
 
-<?php include"footer.php"; ?>
+    <?php include "footer.php"; ?>
 
 
     <script src="all.js"></script>
