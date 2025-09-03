@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Footer Example</title>
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+   
     <style>
         /* Custom Footer Styles */
         .footer {
-            background-color: #222;
+            background-color: #111111ff;
             color: #ddd;
             padding: 40px 20px 20px;
             font-size: 14px;
@@ -58,6 +58,8 @@
             font-size: 12px;
             text-align: center;
             color: #bbb;
+            
+           
         }
 
         @media (max-width: 767px) {
@@ -79,14 +81,13 @@
         <div class="container">
             <div class="row">
                  <!-- Logo & Quick Links -->
-                <div class="col-md-3 mb-4">
+                <div class="col-md-4 mb-4 me-5">
                     <div class="logo-box">Logo</div>
-                  
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do e</p>
                 </div>
 
                 <!-- Logo & Quick Links -->
-                <div class="col-md-3 mb-4">
-                
+                <div class="col-md-2 mb-4 ">
                     <h5>Quick Links</h5>
                     <a href="#">Home</a>
                     <a href="#">About</a>
@@ -95,7 +96,7 @@
                 </div>
 
                 <!-- Location & Opening Times -->
-                <div class="col-md-3 mb-4">
+                <div class="col-md-3 mb-4 ">
                     <h5>Location & Opening Times</h5>
                     <p><strong>Opening Times</strong><br>
                         Tuesday - Sunday: 9:00am – 7:00pm</p>
@@ -104,7 +105,7 @@
                 </div>
 
                 <!-- Contact Us -->
-                <div class="col-md-3 mb-4">
+                <div class="col-md-2 mb-4 ">
                     <h5>Contact Us</h5>
                     <p><strong>Mobile</strong><br>011-1212145<br>011-1212145</p>
                     <p><strong>Email</strong><br>yoursalonemail@gmail.com</p>
@@ -112,14 +113,14 @@
             </div>
 
             <hr>
-            <p class="copyright">
+            <p class="copyright mt-4">
                 © 2025 All Rights Reserved @ Your Salon | Designed & Developed by EVOTZA Pvt Ltd.
             </p>
         </div>
     </footer>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+   
+
 </body>
 
 </html>
