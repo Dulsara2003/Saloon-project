@@ -7,14 +7,277 @@
     <title>Responsive Web Design</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="all.css">
-    <link rel="stylesheet" href="home.css">
-    <link rel="stylesheet" href="about.css">
-    <link rel="stylesheet" href="services.css">
     <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="contact.css">
 
+    <style>
+        /* Home css */
+        .hero {
+            text-align: left;
+            padding: 100px 20px;
+            position: relative;
+            overflow: hidden;
+            height: 100vh;
+            display: flex;
+            align-items: end;
+        }
+
+        .hero video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 0;
+        }
+
+
+        .video-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            /* 50% dark color */
+            z-index: 1;
+        }
+
+
+        .main-text {
+            position: relative;
+            z-index: 1;
+            color: white;
+        }
+
+        .services-btn {
+            height: 45px;
+            width: 150px;
+            font-size: 17px;
+            cursor: pointer;
+            font-weight: bold;
+            color: black;
+            border: none;
+            background-color: #db9200ff;
+            transition: background-color 0.3s, color 0.3s, transform 0.2s;
+        }
+
+        .services-btn:hover {
+            color: white;
+            background-color: #f7a600;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+
+        }
+
+
+        @media (max-width: 768px) {
+
+            .services-btn {
+                height: 40px;
+                width: 120px;
+                font-size: 15px;
+                cursor: pointer;
+                font-weight: bold;
+                color: black;
+                border: none;
+                background-color: #f7a600;
+                transition: background-color 0.3s, color 0.3s, transform 0.2s;
+            }
+        }
+
+        .header-mobile {
+            font-size: 30px;
+            text-shadow: 4px 6px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .header-md {
+            font-size: 50px;
+            text-shadow: 4px 6px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .header-lg {
+            font-size: 60px;
+            text-shadow: 4px 6px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .header-xl {
+            font-size: 70px;
+            text-shadow: 4px 6px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .main-text-balance {
+
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* Home css End */
+
+
+
+        /* About css */
+        .about-section {
+            padding: 80px 0;
+        }
+
+        .about-title {
+            color: #f7a600;
+            font-weight: bold;
+
+        }
+
+        .about-content {
+            max-width: 700px;
+            line-height: 1.5;
+        }
+
+        .about-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .rounded-image {
+            border-radius: 15px;
+        }
+
+
+        @media (max-width: 768px) {
+
+            /* Below LG */
+            .about-box {
+                width: 450px;
+                height: 450px;
+            }
+        }
+
+        @media (max-width: 992px) {
+
+            /* Below LG */
+            .about-box {
+                width: 480px;
+                height: 400px;
+            }
+        }
+
+        /* Services css */
+        .services-section {
+            padding: 80px 0;
+        }
+
+        .gallery-card {
+            background-color: #ddd;
+            border: 3px solid #f1b600;
+            aspect-ratio: 3/4;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 390px;
+            margin: 0 auto;
+        }
+
+        .our-gallery-btn {
+            height: 45px;
+            width: 150px;
+            font-size: 17px;
+            cursor: pointer;
+            font-weight: bold;
+            color: black;
+            border: none;
+            background-color: #db9200ff;
+            transition: background-color 0.3s, color 0.3s, transform 0.2s;
+        }
+
+        .our-gallery-btn:hover {
+            color: white;
+            background-color: #f7a600;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            border: 1px solid #fcfcfc;
+        }
+
+        .gallery-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+
+            .our-gallery-btn {
+                height: 40px;
+                width: 120px;
+                font-size: 15px;
+                cursor: pointer;
+                font-weight: bold;
+                color: black;
+                border: none;
+                background-color: #f7a600;
+                transition: background-color 0.3s, color 0.3s, transform 0.2s;
+            }
+        }
+
+        /* Contact css */
+        .contact-section {
+            padding: 80px 0;
+        }
+
+        .contact-title {
+            color: #f7a600;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 28px;
+        }
+
+        .contact-form .form-control,
+        .contact-form .form-select {
+            background-color: transparent;
+            border: 1px solid #f7a600;
+            color: #fff;
+            border-radius: 0;
+        }
+
+        .contact-form .form-control:focus,
+        .contact-form .form-select:focus {
+            box-shadow: none;
+            border-color: #ffcc33;
+        }
+
+        .contact-form textarea {
+            height: 120px;
+        }
+
+        .send-btn {
+            background-color: #f7a600;
+            color: #000;
+            border: none;
+            border-radius: 0;
+            padding: 10px 30px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .send-btn:hover {
+            background-color: #d18e00;
+        }
+
+        /* Map Container Styling */
+        .map-container iframe {
+            width: 100%;
+            height: 400px;
+            border: 0;
+            border-radius: 10px;
+            filter: hue-rotate(40deg) saturate(1.4) brightness(1.1);
+        }
+    </style>
 </head>
 
-<body style="background-color: #0C0C0C; overflow-x:hidden; ">
+<body style="background-color: #1c1c1c; overflow-x:hidden; ">
 
     <?php
     include "Navbar.php";
@@ -172,82 +435,105 @@
 
             <?php include "commentSection.php"; ?>
 
-
         </div>
 
         <!-- 4th Content (Products) -->
-        <div id="scrollspyHeading4" class=" about-section">
-            <div id="scrollspyHeading2" class="container product-section ">
-                <h2 class="text-center product-title mb-5 fade-up">Products</h2>
-                <div class="row align-items-center">
 
-                    <div class="col-lg-6 d-flex justify-content-lg-start mb-5  justify-content-center ">
-                        <div class="about-box fade-left">
-                            <img src="Resources/product.jpg" class="rounded-image">
-                        </div>
+        <div id="scrollspyHeading4" class="container product-section ">
+
+            <h2 class="text-center product-title mb-5 fade-up">Products</h2>
+            <div class="row align-items-center">
+
+                <div class="col-lg-6 d-flex justify-content-lg-start mb-5  justify-content-center ">
+                    <div class="about-box fade-left">
+                        <img src="Resources/product.jpg" class="rounded-image">
                     </div>
-
-                    <div class="col-11 col-lg-6 mb-5 container">
-                        <p class="product-content text-white text-balance fade-right" style="font-family: 'Franklin Gothic Medium', Arial, sans-serif;font-size: 19px; ">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </p>
-                    </div>
-
                 </div>
+
+                <div class="col-11 col-lg-6 mb-5 container">
+                    <p class="product-content text-white text-balance fade-right" style="font-family: 'Franklin Gothic Medium', Arial, sans-serif;font-size: 19px; ">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                </div>
+
             </div>
-
-
         </div>
+
+
+
 
 
 
         <!-- 5th Content (Contact) -->
-        <div id="scrollspyHeading5" class="container about-section">
-            <h2 class="text-center about-title mb-5">Contact</h2>
-            <div class="row align-items-center">
+        <div id="scrollspyHeading5" class="contact-section">
 
-                <div class="col-11 col-lg-6 mb-5 container">
-                    <p class="about-content text-white text-balence" style="font-family: 'Franklin Gothic Medium', Arial, sans-serif;font-size: 19px; ">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute.
-                    </p>
-                </div>
+            <section>
+                <div class="container ">
+                    <h2 class="contact-title fade-up">Contact</h2>
 
+                    <div class="row g-5 mt-5">
+                        <!-- Contact Form -->
+                        <div class="col-lg-6 fade-right">
+                            <h4 class="fw-bold mb-3 text-white">SEND A MESSAGE</h4>
+                            <p class="mb-4 text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit, sed do e</p>
 
-                <div class="col-lg-6 d-flex  justify-content-center justify-content-lg-end">
-                    <div class="about-box">
-                        <img src="Resources/about.jpg" class="rounded-image">
+                            <form class="contact-form">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control" placeholder="Your Name">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="email" class="form-control" placeholder="Your Email">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control" placeholder="Your Contact Number">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <select class="form-select">
+                                            <option selected disabled>Subject</option>
+                                            <option value="1">General Inquiry</option>
+                                            <option value="2">Support</option>
+                                            <option value="3">Feedback</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12">
+                                        <textarea class="form-control" placeholder="Your Message"></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn send-btn">Send</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- Google Map with Yellow Filter -->
+                        <div class="col-lg-6 fade-left">
+                            <div class="map-container">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31675.070700188397!2d79.99171356371754!3d7.081422196966324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2fb67a22e72d9%3A0x913a2c56a49c8d8e!2sGampaha!5e0!3m2!1sen!2slk!4v1715501679625!5m2!1sen!2slk"
+                                    allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </section>
 
-                <div class="col-11 col-lg-6 mb-5 container">
-                    <p class="about-content text-white text-balence" style="font-family: 'Franklin Gothic Medium', Arial, sans-serif;font-size: 19px; ">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute.
-                    </p>
-                </div>
-
-
-                <div class="col-lg-6 d-flex  justify-content-center justify-content-lg-end">
-                    <div class="about-box">
-                        <img src="Resources/about.jpg" class="rounded-image">
-                    </div>
-                </div>
-            </div>
         </div>
 
 
 
+
     </div>
+
+
+
+
     <script src="all.js"></script>
-    <script src="home.js"></script>
-    <script src="about.js"></script>
     <script src="services.js"></script>
 </body>
 
