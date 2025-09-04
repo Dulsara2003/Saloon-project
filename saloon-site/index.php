@@ -208,7 +208,7 @@
             background-color: transparent;
             border: 1px solid #f7a600;
             border-radius: 0;
-             border-radius: 5px;
+            border-radius: 5px;
 
         }
 
@@ -236,7 +236,7 @@
     </style>
 </head>
 
-<body style="background-color: #1c1c1c; overflow-x:hidden; " >
+<body style="background-color: #1c1c1c; overflow-x:hidden; ">
 
     <?php
     include "Navbar.php";
@@ -260,8 +260,8 @@
 
                     <!-- Mobile -->
                     <div class="row justify-content-center d-block d-md-none"> <!-- Center the content -->
-                        <div class="col-12 main-text-balance text-center animate-left"> <!-- 10 columns on mobile, 5 columns on larger screens -->
-                            <h1 class="fw-bold header-mobile fade-right">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</h1>
+                        <div class="col-12 main-text-balance animate-left"> <!-- 10 columns on mobile, 5 columns on larger screens -->
+                            <h1 class="fw-bold header-mobile fade-right typing-text"></h1>
                         </div>
 
                         <div class="fade-up text-center">
@@ -275,8 +275,8 @@
 
                     <!-- Md -->
                     <div class="row d-none d-md-block d-lg-none "> <!-- Center the content -->
-                        <div class="col-12 main-text-balance text-center animate-left"> <!-- 10 columns on mobile, 5 columns on larger screens -->
-                            <h1 class="fw-bold header-md fade-right">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</h1>
+                        <div class="col-12 main-text-balance  animate-left"> <!-- 10 columns on mobile, 5 columns on larger screens -->
+                            <h1 class="fw-bold header-md fade-right typing-text"></h1>
 
                         </div>
 
@@ -292,7 +292,7 @@
                     <div class="row d-none d-lg-block d-xl-none"> <!-- Center the content -->
                         <div class="col-10 col-md-10 main-text-balance animate-left"> <!-- 10 columns on mobile, 5 columns on larger screens -->
 
-                            <h1 class="fw-bold header-lg fade-right">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</h1>
+                            <h1 class="fw-bold header-lg fade-right typing-text"></h1>
                         </div>
 
                         <div class="fade-up">
@@ -486,17 +486,13 @@
         </div>
 
 
-
-
     </div>
-
 
 
     <?php include "footer.php"; ?>
 
-
     <script src="all.js"></script>
-    <script src="services.js"></script>
+   
 </body>
 
 </html>

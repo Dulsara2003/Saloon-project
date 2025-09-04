@@ -61,43 +61,64 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-         // Typing Text Animation
-         const words = [
-             "STYLISH CUTS",
-             "GLAM LOOKS",
-             "HAIR TRENDS",
-             "BEAUTY CARE",
-             "LUXURY TOUCH",
-             "MODERN STYLES",
-             "ELEGANT FINISH",
-             "SHINE & CONFIDENCE"
-         ];
+document.addEventListener("DOMContentLoaded", () => {
+    const targets = document.querySelectorAll('.zoom-in');
 
-         const spans = document.querySelectorAll(".typing-text");
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('fade-in');
+            } else {
+                entry.target.classList.remove('fade-in'); // remove if you want reset
+            }
+        });
+    }, {
+        threshold: 0.4 // Trigger when 40% visible
+    });
 
-         spans.forEach((span, index) => {
-             let wordIndex = index % words.length; // each span starts from different word
-             let charIndex = 0;
-             let deleting = false;
+    targets.forEach(target => observer.observe(target));
+});
 
-             function typeEffect() {
-                 let currentWord = words[wordIndex];
-                 if (!deleting) {
-                     span.textContent = currentWord.substring(0, charIndex++);
-                     if (charIndex > currentWord.length) {
-                         deleting = true;
-                         setTimeout(typeEffect, 1000);
-                         return;
-                     }
-                 } else {
-                     span.textContent = currentWord.substring(0, charIndex--);
-                     if (charIndex < 0) {
-                         deleting = false;
-                         wordIndex = (wordIndex + spans.length) % words.length; // move ahead by number of spans
-                     }
-                 }
-                 setTimeout(typeEffect, deleting ? 80 : 120);
-             }
 
-             typeEffect();
-         });
+
+
+// Typing Text Animation
+const words = [
+    "STYLISH CUTS",
+    "GLAM LOOKS",
+    "HAIR TRENDS",
+    "BEAUTY CARE",
+    "LUXURY TOUCH",
+    "MODERN STYLES",
+    "ELEGANT FINISH",
+    "SHINE & CONFIDENCE"
+];
+
+const spans = document.querySelectorAll(".typing-text");
+
+spans.forEach((span, index) => {
+    let wordIndex = index % words.length; // each span starts from different word
+    let charIndex = 0;
+    let deleting = false;
+
+    function typeEffect() {
+        let currentWord = words[wordIndex];
+        if (!deleting) {
+            span.textContent = currentWord.substring(0, charIndex++);
+            if (charIndex > currentWord.length) {
+                deleting = true;
+                setTimeout(typeEffect, 1000);
+                return;
+            }
+        } else {
+            span.textContent = currentWord.substring(0, charIndex--);
+            if (charIndex < 0) {
+                deleting = false;
+                wordIndex = (wordIndex + spans.length) % words.length; // move ahead by number of spans
+            }
+        }
+        setTimeout(typeEffect, deleting ? 80 : 120);
+    }
+
+    typeEffect();
+});
