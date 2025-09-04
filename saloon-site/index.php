@@ -208,6 +208,7 @@
             background-color: transparent;
             border: 1px solid #f7a600;
             border-radius: 0;
+             border-radius: 5px;
 
         }
 
@@ -461,7 +462,7 @@
                                     <div class="col-12">
                                         <textarea class="form-control text-white " style="background-color: #1c1c1c;" placeholder="Your Message"></textarea>
                                     </div>
-                                    <div class="col-12">
+                                    <div class="col-12 text-center">
                                         <button type="submit" class="button">Send</button>
                                     </div>
                                 </div>

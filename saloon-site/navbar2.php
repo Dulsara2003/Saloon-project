@@ -27,6 +27,7 @@
             border: 2px solid #f7a600;
             color: white;
             padding: 8px 15px;
+             border-radius: 5px;
             font-weight: 500;
             transition: all 0.4s ease-in-out;
             /* Smooth transition for all properties */
