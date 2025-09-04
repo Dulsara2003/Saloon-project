@@ -235,7 +235,7 @@
     </style>
 </head>
 
-<body style="background-color: #1c1c1c; overflow-x:hidden; ">
+<body style="background-color: #1c1c1c; overflow-x:hidden; " >
 
     <?php
     include "Navbar.php";
