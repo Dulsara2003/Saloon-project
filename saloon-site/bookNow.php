@@ -9,46 +9,49 @@
     <link rel="stylesheet" href="all.css">
 
     <style>
-        .booking-section {
-            max-width: 900px;
-            margin: 70px auto;
-            padding: 30px;
+
+        .special-form-section {
+            padding: 0px 21px;
+            margin-top: 120px;
         }
 
-        .booking-section h5 {
-            text-align: center;
-            margin-bottom: 30px;
-            font-weight: 500;
+        .special-section {
+            padding: 0px 21px;
+            margin-top: 150px;
         }
 
-        .form-control,
-        .form-select {
+        .contact-box {
+            background-color: #0c0c0c;
+            /* left box dark */
+            border: 1px solid #f7a600;
+            border-radius: 5px;
+        }
+
+        .special-title {
+            color: #f7a600;
+            font-weight: bold;
+        }
+
+        .custom-input {
             background-color: transparent;
             border: 1px solid #f7a600;
             color: white;
-            border-radius: 0;
+
         }
 
-        .form-control:focus,
-        .form-select:focus {
+        .custom-input::placeholder {
+            color: white;
+            opacity: 0.8;
+        }
+
+        .custom-input:focus {
+            background-color: #1c1c1c;
+            border-color: #f7a600;
             box-shadow: none;
-            border-color: #ffbb33;
-            background-color: transparent;
             color: white;
         }
 
-        .form-control::placeholder {
-            color: #aaa;
-        }
 
-        textarea {
-            resize: none;
-        }
-
-
-        textarea {
-            height: 150px;
-        }
 
         /* Special Appoinment */
         .special-box {
@@ -65,11 +68,14 @@
 
         .btn-box {
             position: absolute;
+            height: 40px;
+            width: 130px;
             bottom: 20px;
             background-color: #f7a600;
             color: #fff;
             font-weight: bold;
-            padding: 8px 20px;
+            border-radius: 5px;
+
             border: none;
             opacity: 0;
             /* hidden by default */
@@ -84,89 +90,112 @@
 </head>
 
 <body style="background-color: #1c1c1c; overflow-x:hidden; ">
+
     <?php include "Navbar2.php"; ?>
 
 
-    <section class="booking-section">
-        <h5 class="text-white">
+    <div class="container special-form-section mb-5">
+        <h4 class="text-center special-title fw-bold">
             Select Your Saloon's Haircut Appointment, Wedding Appointment or Other Salon Services
-        </h5>
-
-        <div class="form text-center">
-            <div class="row g-3 mb-4">
-
-                <div class="col-md-4">
-                    <input type="text" class="form-control" placeholder="First Name">
-                </div>
-
-                <div class="col-md-4">
-                    <input type="text" class="form-control" placeholder="Last Name">
-                </div>
-
-
-                <div class="col-md-4">
-                    <input type="text" class="form-control" placeholder="Your Mobile">
-                </div>
-
-                <div class="col-md-4">
-                    <select class="form-select">
-                        <option selected disabled>Select Service</option>
-                        <option>Haircut</option>
-                        <option>Wedding</option>
-                        <option>Other</option>
-                    </select>
-                </div>
-
-                <div class="col-md-4">
-                    <input type="date" class="form-control " placeholder="Your Mobile">
-
-                </div>
-
-
-                <div class="col-md-4">
-                    <select class="form-select">
-                        <option selected disabled>Select Gents , Ladies or Kids</option>
-                        <option>Gents</option>
-                        <option>Ladies</option>
-                        <option>Kids</option>
-                    </select>
-                </div>
-
-                <div class="col-12">
-                    <textarea class="form-control" placeholder="Other Services (Optional)"></textarea>
-                </div>
-            </div>
-
-            <button type="submit" class="button  ">Book Now</button>
-        </div>
-    </section>
-
-
-    <!-- Special Appoinment  -->
-    <div class="container text-center my-5">
-        <h3 class="text-warning fw-bold">Special Appointments</h3>
-        <p class="text-white">
+        </h4>
+        <p class="text-center text-white text-balance">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
             et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
         </p>
 
-        <div class="row justify-content-center g-4 mt-4">
+        <div class="row mt-4 g-4">
+            <!-- Left Contact Info -->
+            <div class="col-lg-4">
+                <div class="contact-box p-4 ">
+                    <h5 class="fw-bold text-white">GET IN TOUCH</h5>
+                    <p class="text-white">
+                        Start Your Journey to Beautiful Hair Today. Contact Us for Expert Hair Care and Personalized Services.
+                    </p>
+                    <p class="text-white mb-1"><i class="bi bi-geo-alt"></i> No.6, Pagoda Road,<br> Nugegoda, 10250, Sri Lanka.</p>
+                    <p class="text-white mb-1"><i class="bi bi-clock"></i> 9.00 AM – 07.00 PM Tuesday – Sunday</p>
+                    <p class="text-white mb-1"><i class="bi bi-telephone"></i> +94 77 388 5122</p>
+                    <p class="text-white"><i class="bi bi-envelope"></i> saloninfo@gmail.com</p>
+                </div>
+            </div>
+
+            <!-- Right Form -->
+            <div class="col-lg-8 ">
+                <form class="row g-3">
+
+                    <div class="col-md-4">
+                        <input type="text" class="form-control custom-input" placeholder="First Name" style="background-color: #1c1c1c;">
+                    </div>
+
+                    <div class="col-md-4">
+                        <input type="text" class="form-control custom-input" placeholder="Last Name">
+                    </div>
+
+                    <div class="col-md-4">
+                        <input type="text" class="form-control custom-input" placeholder="Your Mobile">
+                    </div>
+
+                    <div class="col-md-4">
+                        <select class="form-select custom-input">
+                            <option selected disabled>Select Service</option>
+                            <option>Haircut</option>
+                            <option>Wedding</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-4">
+                        <input type="date" class="form-control custom-input" placeholder="Month">
+                    </div>
+
+                    <div class="col-md-4">
+                        <select class="form-select custom-input">
+                            <option selected disabled>Select Gents, Ladies or Kids</option>
+                            <option>Gents</option>
+                            <option>Ladies</option>
+                            <option>Kids</option>
+                        </select>
+                    </div>
+
+                    <div class="col-12 mb-3">
+                        <textarea class="form-control custom-input" rows="8" placeholder="Other Services (Optional)"></textarea>
+                    </div>
+
+                    <div class="col-12 text-center ">
+                        <button type="submit" class="button">Book Now</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Special Appoinment  -->
+    <div class="container text-center special-section mb-5">
+        <h3 class="special-title fw-bold">Special Appointments</h3>
+        <p class="text-white col-10  mx-auto text-balance">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+        </p>
+
+        <div class="row justify-content-center g-5 mt-4">
             <!-- Box 1 -->
-            <div class="col-md-3">
+            <div class="col-md-4">
                 <div class="special-box">
                     <button class="btn-box">Photo Shoot</button>
                 </div>
             </div>
 
             <!-- Box 2 -->
-            <div class="col-md-3">
+            <div class="col-md-4">
                 <div class="special-box">
                     <button class="btn-box">Pre Shoot</button>
                 </div>
             </div>
 
             <!-- Box 3 -->
-            <div class="col-md-3">
+            <div class="col-md-4">
                 <div class="special-box">
                     <button class="btn-box">Wedding</button>
                 </div>
