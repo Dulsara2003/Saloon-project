@@ -71,7 +71,7 @@
             width: 130px;
             bottom: 20px;
             background-color: #f7a600;
-            color: #fff;
+            color: #000000ff;
             font-weight: bold;
             border-radius: 5px;
 
@@ -83,6 +83,7 @@
 
         .special-box:hover .btn-box {
             opacity: 1;
+           
             /* show on hover */
         }
     </style>
