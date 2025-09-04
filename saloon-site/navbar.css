@@ -1,6 +1,7 @@
   .navbar {
             background-color: #1c1c1c;
             padding: 15px 0;
+            height: 70px;
         }
 
         .navbar-nav .nav-link.active {
@@ -9,11 +10,7 @@
             font-weight: bold;
         }
 
-        .navbar-brand {
-            color: white;
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
+       
 
         .btn-book {
             background-color: #0C0C0C;
@@ -51,6 +48,8 @@
         .btn-book:hover::before {
             left: 100%;
         }
+
+        
 
         /* Sidebar Styles for Small Screens */
         @media (max-width: 991px) {
