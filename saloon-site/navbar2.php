@@ -6,12 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navbar Design</title>
 
-  
-    
     <style>
-          .navbar {
+        .navbar {
             background-color: #1c1c1c;
             padding: 15px 0;
+            height: 70px;
         }
 
         .navbar-nav .nav-link.active {
@@ -20,11 +19,7 @@
             font-weight: bold;
         }
 
-        .navbar-brand {
-            color: white;
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
+       
 
         .btn-book {
             background-color: #0C0C0C;

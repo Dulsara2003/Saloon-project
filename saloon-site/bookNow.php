@@ -46,15 +46,45 @@
         }
 
 
-
         textarea {
             height: 150px;
+        }
+
+        /* Special Appoinment */
+        .special-box {
+            background-color: #ddd;
+            border: 3px solid #f1b600;
+            aspect-ratio: 3/4;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 390px;
+            margin: 0 auto;
+        }
+
+        .btn-box {
+            position: absolute;
+            bottom: 20px;
+            background-color: #f7a600;
+            color: #fff;
+            font-weight: bold;
+            padding: 8px 20px;
+            border: none;
+            opacity: 0;
+            /* hidden by default */
+            transition: opacity 0.4s ease-in-out;
+        }
+
+        .special-box:hover .btn-box {
+            opacity: 1;
+            /* show on hover */
         }
     </style>
 </head>
 
 <body style="background-color: #1c1c1c; overflow-x:hidden; ">
-    <?php include "navbar2.php"; ?>
+    <?php include "Navbar2.php"; ?>
 
 
     <section class="booking-section">
@@ -69,8 +99,8 @@
                     <input type="text" class="form-control" placeholder="First Name">
                 </div>
 
-                  <div class="col-md-4">
-                      <input type="text" class="form-control" placeholder="Last Mobile">
+                <div class="col-md-4">
+                    <input type="text" class="form-control" placeholder="Last Name">
                 </div>
 
 
@@ -110,6 +140,43 @@
             <button type="submit" class="button  ">Book Now</button>
         </div>
     </section>
+
+
+    <!-- Special Appoinment  -->
+    <div class="container text-center my-5">
+        <h3 class="text-warning fw-bold">Special Appointments</h3>
+        <p class="text-white">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+        </p>
+
+        <div class="row justify-content-center g-4 mt-4">
+            <!-- Box 1 -->
+            <div class="col-md-3">
+                <div class="special-box">
+                    <button class="btn-box">Photo Shoot</button>
+                </div>
+            </div>
+
+            <!-- Box 2 -->
+            <div class="col-md-3">
+                <div class="special-box">
+                    <button class="btn-box">Pre Shoot</button>
+                </div>
+            </div>
+
+            <!-- Box 3 -->
+            <div class="col-md-3">
+                <div class="special-box">
+                    <button class="btn-box">Wedding</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <?php include "footer.php"; ?>
 </body>
 
 </html>
