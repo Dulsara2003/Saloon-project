@@ -64,12 +64,20 @@
 
         <div class="form text-center">
             <div class="row g-3 mb-4">
+
                 <div class="col-md-4">
-                    <input type="text" class="form-control" placeholder="Your Name">
+                    <input type="text" class="form-control" placeholder="First Name">
                 </div>
+
+                  <div class="col-md-4">
+                      <input type="text" class="form-control" placeholder="Last Mobile">
+                </div>
+
+
                 <div class="col-md-4">
                     <input type="text" class="form-control" placeholder="Your Mobile">
                 </div>
+
                 <div class="col-md-4">
                     <select class="form-select">
                         <option selected disabled>Select Service</option>
@@ -80,22 +88,10 @@
                 </div>
 
                 <div class="col-md-4">
-                      <select class="form-select">
-                        <option selected disabled>Select Month</option>
-                        <option>January</option>
-                        <option>February</option>
-                        <option>March</option>
-                    </select>
+                    <input type="date" class="form-control " placeholder="Your Mobile">
+
                 </div>
 
-                <div class="col-md-4">
-                     <select class="form-select">
-                        <option selected disabled>Select a Day</option>
-                        <option>01</option>
-                        <option>02</option>
-                        <option>03</option>
-                    </select>
-                </div>
 
                 <div class="col-md-4">
                     <select class="form-select">
